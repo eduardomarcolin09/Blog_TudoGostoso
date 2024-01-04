@@ -1,0 +1,225 @@
+/* Card - Interno */
+
+.container {
+    display: flex;
+    margin: 30px;
+}
+
+.container2 {
+    margin: 0px 20px 20px 20px;
+    color: black;
+    overflow: hidden;
+}
+
+.titulo {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.subtitulos {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.data {
+    font-size: 18px;
+    color: #888;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.modo-de-preparo {
+    margin: 0px 20px 20px 20px;
+}
+
+.bt-avaliacao {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.bt-avaliacao:hover {
+    background-color: #2980b9;
+}
+
+.avaliacao{
+    text-align: center;
+}
+
+p a {
+    text-decoration: none;
+    color: #3498db;
+    margin-right: 5px;
+}
+
+p a[href] {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Linha Quebra */
+hr {
+    margin: 10px 10px;
+    border: none;
+    height: 3px;
+    background-color: #ddd; 
+}
+
+
+.relacionados {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+/* Relacionados -  Cards */
+.container3 {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.card {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    height: auto;
+}
+
+.card img {
+    object-fit: cover;
+    /*max-width: 150px; */
+    width: 150px;
+    height: 250px;
+    border-radius: 5px 0 0 5px; 
+}
+
+.card-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.card p {
+    font-size: 16px;
+    color: #888;
+    margin: 5px 0;
+}
+
+.card a {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card a:hover {
+    background-color: #2980b9;
+}
+
+
+/* MEDIA QUERYS */
+
+/* Telas menores - Largura máxima de 1200px */
+@media(max-width: 1200px) {
+    .image {
+        display: none;
+    }
+}
+
+/* Telas menores - Largura máxima de 768px */
+@media(max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .container2 {
+        margin: 20px 0;
+    }
+    .titulo {
+        font-size: 28px;
+    }
+
+    .subtitulos {
+        font-size: 18px;
+    }
+
+    .data {
+        font-size: 16px;
+    }
+
+    .modo-de-preparo {
+        margin: 20px 0;
+    }
+
+    /* Relacionados */
+    .card {
+        width: 100%; 
+        margin: 10px;
+    }
+    .card img {
+        height: auto; 
+    }
+    /* o :not() - ele esconde todos os paragráfos menos o que eu coloquei entre ()*/
+    .card p:not(.datapublicacao), .card a {
+        display: none; 
+    }
+
+    .card h2 {
+        font-size: 20px; 
+    }
+}
+
+/* Telas menores - Largura máxima de 480px */
+@media(max-width: 480px) {
+    .container {
+        margin: 10px;
+    }
+
+    .container2 {
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    .titulo {
+        font-size: 24px;
+    }
+
+    .subtitulos {
+        font-size: 16px;
+    }
+
+    .data {
+        font-size: 14px;
+    }
+
+    .modo-de-preparo {
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Rajdhani&display=swap');
+
+body{
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Titulo e Subtítulo */
+.titulos {
+    text-align: center;
+}
+
+#t1 {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+#t2 {
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-size: 25px;
+}
+
+/* Menu */
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.a {
+    font-size: 20px;
+    display: flex; 
+    align-items: center; 
+}
+
+#menu input[type="text"] {
+    font-size: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.fas.fa-search, .fas.fa-caret-down{
+    font-size: 20px;
+    color: #555;
+    cursor: pointer;
+}
+
+#icone-pesquisar {
+    margin-left: 10px;
+}
+
+#icone-filtrar {
+    margin-right: 5px;
+}
+
+.fas.fa-search:hover, .fas.fa-caret-down:hover{
+    color: #333;
+}
+
+.icone-menu {
+    display: none; 
+}
+#dropdown {
+    display: none;
+}
+/* MEDIA QUERYS */ 
+
+/* Telas menores - Largura máxima de 768px */
+@media(max-width: 768px) {
+    /* Media Query - Titulo */
+    #t2 {
+        display: none;
+    }
+    #t1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    /* Media Query - Menu */
+    .a {
+        display: none; 
+    }
+    .icone-menu {
+        display: flex; 
+        align-items: center; 
+        justify-content: flex-end; 
+    }
+}
+
+/* Telas menors - Largura máxima 280px */
+@media (max-width: 280px) {
+    body {
+        display: none;
+    }
+}
+
+/* a */
+
+
