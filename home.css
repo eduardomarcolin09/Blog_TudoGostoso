@@ -1,5 +1,41 @@
-/* Cards */
+/* Form */
+#form-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    z-index: 999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
 
+#form-container #teste1 {
+    margin-left: 20px;
+}
+
+#form-container .fa-solid.fa-tag {
+    margin-top: 10px;
+}
+
+#AdicionarCard, .abrirform {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#AC {
+    text-align: center;
+}
+
+/* Cards */
 #container {
     display: flex;
     flex-wrap: wrap;
@@ -16,6 +52,10 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     background-color: #fff;
     text-align: center;
+}
+
+.card:hover {
+    border-color: #3498db;
 }
 
 .card img {
