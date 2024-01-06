@@ -21,17 +21,49 @@
             <i class="fas fa-caret-down" id="icone-filtrar"></i>
             Filtros
         </div>
-        <div class="a">
-            <input type="text" id="inputPesquisar" placeholder="Pesquisar">
-            <i class="fas fa-search" id="icone-pesquisar"></i>
-        </div>
-        <div id="icone-menu">
-            <i class="fas fa-bars"></i>
-        </div>
+        <input type="text" id="inputPesquisar" placeholder="Pesquisar">
+        <button class="abrirform">Adicionar Card</button>
     </div>
     
+    <!-- Formulário -->
+    <div id="form-container">
+        <form id="card-form">
+            <div>
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo" required>
+
+                <label for="data" id="teste1">Data de Publicação:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <div>
+                <i class="fa-solid fa-tag"></i> <label for="tag1">Tag:</label>
+                <input type="text" id="tag1" name="tag1" required>
+            </div>
+            <div>
+                <i class="fa-solid fa-tag"></i> <label for="tag2">Tag:</label>
+                <input type="text" id="tag2" name="tag2" required>
+            </div>
+            <div>
+                <i class="fa-solid fa-tag"></i> <label for="tag3">Tag:</label>
+                <input type="text" id="tag3" name="tag3" required>
+            </div>
+            <div>
+                <label for="resumo">Resumo da Postagem:</label>
+                <br>
+                <textarea id="resumo" name="resumo" required></textarea>
+            </div>
+            <div>
+                <label for="imagem">Imagem:</label>
+                <input type="file" id="imagem" name="imagem" accept="image/*" required>
+            </div>
+            <br>
+            <div id="AC"><button type="submit" id="AdicionarCard">Adicionar Card</button></div>
+        </form>
+    </div>
+
     <!-- Cards -->
     <div id="container">
+        <!--
         <div class="card">
             <img src="imagens/pizza-margherita.jpg" alt="Imagem de Destaque">
             <h2>Pizza Margherita</h2>
@@ -63,8 +95,9 @@
             <p>Tags: <a href="#">Pad Thai</a>, <a href="#">Tailandesa</a>, <a href="#">Receitas</a></p>
             <p>Resumo da Postagem: Aprenda a fazer um saboroso Pad Thai de camarão, um prato tailandês popular.</p>
             <a href="sushi-fresco.html">Leia mais</a>
-        </div>
+        </div>-->
     </div>
+    
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="jQuery.js"></script>
     <script src="script.js"></script>
