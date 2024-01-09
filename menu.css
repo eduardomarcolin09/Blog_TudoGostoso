@@ -89,7 +89,7 @@ body{
     }
 
     /* Media Query - Menu */
-    .a {
+    .a, .abrirform, #inputPesquisar{
         display: none; 
     }
     .icone-menu {
@@ -105,7 +105,3 @@ body{
         display: none;
     }
 }
-
-/* a */
-
-
