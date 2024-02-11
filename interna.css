@@ -162,6 +162,9 @@ hr {
     .container2 {
         margin: 20px 0;
     }
+    .container3{
+        width: 90%;
+    }
     .titulo {
         font-size: 28px;
     }
@@ -180,7 +183,6 @@ hr {
 
     /* Relacionados */
     .card {
-        width: 100%; 
         margin: 10px;
     }
     .card img {

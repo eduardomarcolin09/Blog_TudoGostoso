@@ -75,6 +75,66 @@ body{
 #dropdown {
     display: none;
 }
+
+/* Rodapé */ 
+
+hr {
+    margin: 30px 30px;
+    border: none;
+    height: 3px;
+    background-color: #ddd; 
+}
+
+.grid-container {
+    padding: 20px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin-top: 5px;
+}
+
+.grid-item {
+    text-align: center;
+    justify-content: center;
+}
+
+.logo {
+    margin: 0 auto;
+}
+
+.titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.endereco {
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+.info-contato {
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+.item-contato {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.item-contato i {
+    margin-right: 5px;
+}
+
 /* MEDIA QUERYS */ 
 
 /* Telas menores - Largura máxima de 768px */
@@ -97,8 +157,31 @@ body{
         align-items: center; 
         justify-content: flex-end; 
     }
+
+    /* Media Qury - Rodapé */
+    .logo{
+        display: none;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .titulo {
+        text-align: center;
+    }
 }
 
+/* Telas menores - Largura máxima de 480px */
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
 /* Telas menors - Largura máxima 280px */
 @media (max-width: 280px) {
     body {
